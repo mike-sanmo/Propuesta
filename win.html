@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/win.css">
+    <script type="module" src="js/win.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <title>Ganador</title>
+</head>
+<body>
+    <svg viewBox="0 0 1320 300">
+
+        <!-- Symbol -->
+        <symbol id="s-text">
+          <text text-anchor="middle"
+                x="50%" y="50%" dy=".35em">
+            ¡ganaste!
+          </text>
+        </symbol>  
+      
+        <!-- Duplicate symbols -->
+        <use xlink:href="#s-text" class="text"
+             ></use>
+        <use xlink:href="#s-text" class="text"
+             ></use>
+        <use xlink:href="#s-text" class="text"
+             ></use>
+        <use xlink:href="#s-text" class="text"
+             ></use>
+        <use xlink:href="#s-text" class="text"
+             ></use>
+      
+      </svg>
+      <button>Continuar</button>
+</body>
+</html>
