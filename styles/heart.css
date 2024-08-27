@@ -283,11 +283,12 @@ body{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    display: none;
-    margin-top: 28%;
+    display: inline;
+    -webkit-transform: translate(-1%, 1000%);
+	-moz-transform: translate(-1%, 1000%);
+	transform: translate(-1%, 1000%);
     font-size: 50px;
     cursor: pointer;
-    left: -0.2%;
   }
   .ov-btn-grow-ellipse:hover {
     color: #fff;/* color de fuente hover */

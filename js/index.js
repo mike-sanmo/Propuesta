@@ -246,6 +246,7 @@ $section.addEventListener('click',() => {
     const audio = new window.Audio('./src/neon-gaming.mp3')
     audio.play()
     $section.remove()
+    audio.loop = true
 })
 
 const $button = document.querySelector('button')
