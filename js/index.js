@@ -16,8 +16,8 @@ const $brick = document.querySelector('#brick')
         let y = canvas.height - 60
 
         //Velocidad de la pelota
-        let dx = -1.8
-        let dy = -1.8
+        let dx = -2.5
+        let dy = -2.5
 
         const paddleHeight = 40;
         const paddleWidth = 100;
