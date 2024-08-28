@@ -16,8 +16,8 @@ const $brick = document.querySelector('#brick')
         let y = canvas.height - 60
 
         //Velocidad de la pelota
-        let dx = -3.5
-        let dy = -3.5
+        let dx = -6
+        let dy = -6
 
         const paddleHeight = 40;
         const paddleWidth = 100;
@@ -70,7 +70,7 @@ const $brick = document.querySelector('#brick')
             }
         }
 
-        const PADDLE_SENSIBILITY = 6
+        const PADDLE_SENSIBILITY = 10
 
         //Pintar la pelota
         function drawBall(){
