@@ -15,13 +15,13 @@ let x = canvas.width / 2
 let y = canvas.height - 60
 
 //Velocidad de la pelota
-let dx = -6
-let dy = -6
+let dx = -5.5
+let dy = -5.5
 
 //Variables del paddle
 const paddleHeight = 40;
 const paddleWidth = 100;
-const PADDLE_SENSIBILITY = 10
+const PADDLE_SENSIBILITY = 8
 
 let paddleX = (canvas.width - paddleWidth) / 2
 let paddleY = canvas.height - paddleHeight - 10
@@ -32,28 +32,28 @@ let leftPressed = false
 //Variables de los ladrillos
 const brickRowCount = 11
 const brickColumnCount = 13
-        const brickWidth = canvas.width / 14
-        const brickHeight = canvas.height / 27
-        const brickPadding = 2
-        const brickOffsetTop = 80
-        const brickOffsetLeft = 16
-        const bricks = []
-        const BRICKS_STATUS = {ACTIVE: 1, DESTROYED: 0}
-        const BRICKS_ATRIBUTES = [ {COLOR: '#1a1334', PUNTOS: 1}, 
-                                {COLOR: '#26294a', PUNTOS: 2},
-                                {COLOR: '#01545a', PUNTOS: 3},
-                                {COLOR: '#017351', PUNTOS: 5},
-                                {COLOR: '#03c383', PUNTOS: 8},
-                                {COLOR: '#aad962', PUNTOS: 10},
-                                {COLOR: '#fbbf45', PUNTOS: 12},
-                                {COLOR: '#ef6a32', PUNTOS: 15},
-                                {COLOR: '#ed0345', PUNTOS: 17},
-                                {COLOR: '#a12a5e', PUNTOS: 20},
-                                {COLOR: '#710162', PUNTOS: 25},
-                                {COLOR: '#110141', PUNTOS: 30}]
+const brickWidth = canvas.width / 14
+const brickHeight = canvas.height / 27
+const brickPadding = 2
+const brickOffsetTop = 80
+const brickOffsetLeft = 16
+const bricks = []
+const BRICKS_STATUS = {ACTIVE: 1, DESTROYED: 0}
+const BRICKS_ATRIBUTES = [  {COLOR: '#1a1334', PUNTOS: 1}, 
+                            {COLOR: '#26294a', PUNTOS: 2},
+                            {COLOR: '#01545a', PUNTOS: 3},
+                            {COLOR: '#017351', PUNTOS: 5},
+                            {COLOR: '#03c383', PUNTOS: 8},
+                            {COLOR: '#aad962', PUNTOS: 10},
+                            {COLOR: '#fbbf45', PUNTOS: 12},
+                            {COLOR: '#ef6a32', PUNTOS: 15},
+                            {COLOR: '#ed0345', PUNTOS: 17},
+                            {COLOR: '#a12a5e', PUNTOS: 20},
+                            {COLOR: '#710162', PUNTOS: 25},
+                            {COLOR: '#110141', PUNTOS: 30}]
 
-        let score = 0
-        let winner_score = 0
+let score = 0
+let winner_score = 0
         
         for (let c = 0; c < brickColumnCount; c++){
             bricks[c] = []
